@@ -10,6 +10,7 @@ import { PostsModule } from './posts/posts.module';
 import { UsersComponent } from './users/users.component';
 import { UsersModule } from './users/users.module';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 export const ROUTES: Routes = [
   {
@@ -20,7 +21,7 @@ export const ROUTES: Routes = [
   {
     path: 'users',
     component: UsersComponent
-    // loadChildren: './users/users.module#UsersModule'
+    // loadChildren: './users/users.module#UsersModule'  
   },
   {
     path: 'home',
@@ -30,6 +31,10 @@ export const ROUTES: Routes = [
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];
 
@@ -37,7 +42,8 @@ export const ROUTES: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
