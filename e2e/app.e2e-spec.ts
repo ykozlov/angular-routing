@@ -1,6 +1,6 @@
 import { AngularRouting2Page } from './app.po';
 
-describe('angular-routing2 App', function() {
+describe('angular-routing App', function() {
   let page: AngularRouting2Page;
 
   beforeEach(() => {
