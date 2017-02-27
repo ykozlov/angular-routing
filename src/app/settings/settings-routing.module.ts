@@ -15,7 +15,7 @@ const settingsRoutes: Routes = [
                 component: SettingsProfileComponent,
                 children: [
                     {
-                        path: 'home',
+                        path: '',
                         component: SettingsHomeComponent
                     }
                 ]
