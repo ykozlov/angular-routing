@@ -1,3 +1,9 @@
+#Description
+This app contains basic routing logic for Angular application
+[DEMO](https://ykozlov.github.io//angular-routing)
+
+
+
 # AngularRouting2
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.30.
