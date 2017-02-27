@@ -1,6 +1,8 @@
 <h4>
   User List Component
 </h4>
+
+<p *ngIf='optionalParameter'>Optional parameter is received {{optionalParameter}}</p>
 <div>
   <a [routerLink]="['/user',1]">User 1</a>
   <a [routerLink]="['/user',2]">User 2</a>  
